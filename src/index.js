@@ -53,7 +53,7 @@ function SkillList() {
       <Skill skill="Unity" emoji="💪" color="cyan" />
       <Skill skill="PHP" emoji="💪" color="orange" />
       <Skill skill="React" emoji="🐥" color="yellow" />
-      <Skill skill="MySQL" emoji="👍" color="orange" />
+      <Skill skill="MySQL" emoji="👍" color="orangered" />
     </div>
   );
 }
