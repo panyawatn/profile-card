@@ -26,24 +26,27 @@ function toThaiDateString(date) {
   let minutes = date.getMinutes().toString().padStart(2, "0");
   let second = date.getSeconds().toString().padStart(2, "0");
 
-  return `${numOfDay} ${month} ${year} ` + `${hour}:${minutes}:${second} น.`;
+  return `${numOfDay} ${month} ${year} ${hour}:${minutes}:${second} น.`;
 }
 
 function MyDateTime() {
   let date1 = new Date();
   date1 = toThaiDateString(date1);
-  return <div>{date1}</div>;
+  return <div style={{ margin: "40px" }}>{date1}</div>;
 }
 
 function App() {
   return (
-    <div className="card">
-      <Avatar />
-      <div className="data">
-        <Intro />
-        <SkillList />
+    <>
+      <div className="card">
+        <Avatar />
+        <div className="data">
+          <Intro />
+          <SkillList />
+        </div>
       </div>
-    </div>
+      <MyDateTime />
+    </>
   );
 }
 
