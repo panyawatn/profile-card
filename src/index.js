@@ -54,9 +54,12 @@ function SkillList() {
   return (
     <div className="skill-list">
       <Skill skill="Unity" emoji="💪" color="cyan" />
+      <Skill skill="HTML" emoji="👍" color="red" />
       <Skill skill="PHP" emoji="💪" color="orange" />
       <Skill skill="React" emoji="🐥" color="yellow" />
       <Skill skill="MySQL" emoji="👍" color="orangered" />
+      <Skill skill="Pyhton" emoji="👍" color="blue" />
+      <Skill skill="Bootstrtap" emoji="👍" color="violet" />
     </div>
   );
 }
@@ -73,18 +76,20 @@ function Skill(props) {
 function Intro() {
   return (
     <div>
-      <h1>ดร.อนุสรณ์ บรรเทิง</h1>
+      <h1>นายปัญญวัฒน์ สุภาคาร</h1>
       <p>
-        อาจารย์สาขาเทคโนโลยีสารสนเทศและการสื่อสาร คณะวิทยาศาสตร์
+        นักศึกษาระดับ ปริญญษโท สาขาเทคโนโลยีสารสนเทศและการสื่อสาร คณะวิทยาศาสตร์
         มหาวิทยาลัยอุบลราชธานี ชื่นชอบในเทคโนโลยีและคอมพิวเตอร์
-        เวลาว่างถ้าไม่เล่นเกม ก็นอน..
+        ชอบเรียนรู้สิ่งใหม่ๆ
       </p>
     </div>
   );
 }
 
 function Avatar() {
-  return <img className="avatar" src="ajo2.jpg" alt="Anusorn Bunteong" />;
+  return (
+    <img className="avatar" src="panyawatn.jpg" alt="Panyawatn Suphakarn" />
+  );
 }
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
